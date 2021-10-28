@@ -26,7 +26,6 @@ function checkGender () {
 function checkParametrs() {
 	for (let i=0; i < inputsParametrs.length; i++) {
 		inputsParametrs[i].addEventListener('change', function(evt) {
-			this.value = this.value.replace (/\D/, '');
 			if (inputsParametrs[i].value != '') {
 				buttonClear.disabled = false;
 				arr.push(true);
@@ -34,6 +33,9 @@ function checkParametrs() {
 			if (arr.length == inputsParametrs.length) {
 				buttonCalc.disabled = false;
 			}
+		});
+		inputsParametrs[i].addEventListener('keyup', function(evt) {
+			this.value = this.value.replace (/\D/, '');
 		});
 	}
 }
