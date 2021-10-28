@@ -646,3 +646,11 @@ input[type="number"] {
 
   cursor: not-allowed;
 }
+
+@media (max-width: 460px) { 
+  .container {
+    max-width: 460px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
