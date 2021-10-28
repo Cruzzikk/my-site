@@ -648,9 +648,49 @@ input[type="number"] {
 }
 
 @media (max-width: 460px) { 
+  body {
+    width: 30%;
+  }
   .container {
     max-width: 460px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .heading-main {
+    font-size: 30px;
+  }
+
+  .counter__form, .counter__result {
+    padding: 32px 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .input__heading-unit {
+    font-size: 15px;
+  }
+
+  .input__heading {
+    display: block;
+  }
+
+  .inputs-group {
+    display: grid;
+    justify-content: center;
+  }
+
+  .inputs-group .input:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .form__submit {
+    display: grid;
+  }
+
+  .form__reset-button {
+    margin-top: 20px;
   }
 }
