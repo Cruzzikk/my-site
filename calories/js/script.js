@@ -77,8 +77,8 @@ function calculateCalories () {
 		activityRates = 1.9;
 	}
 
-	let normaFemale = Math.round(activityRates * ((10 * Number(weight.value)) + (6,25 * Number(height.value)) - (5 * Number(age.value)) - 161));
-	let normaMale =  Math.round(activityRates * ((10 * Number(weight.value)) + (6,25 * Number(height.value)) - (5 * Number(age.value)) + 5));
+	let normaFemale = Math.round(activityRates * ((10 * Number(weight.value)) + (6.25 * Number(height.value)) - (5 * Number(age.value)) - 161));
+	let normaMale =  Math.round(activityRates * ((10 * Number(weight.value)) + (6.25 * Number(height.value)) - (5 * Number(age.value)) + 5));
 
 	if (genderFemale.checked) {
 		caloriesNorm.innerHTML = normaFemale;
