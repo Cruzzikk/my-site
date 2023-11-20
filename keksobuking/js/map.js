@@ -25,7 +25,7 @@ L.tileLayer(
 ).addTo(map);
 
 const mainPinIcon = L.icon({
-  iconUrl: '../leaflet/img/main-pin.svg',
+  iconUrl: './leaflet/img/main-pin.svg',
   iconSize: [52, 52],
   iconAnchor: [26, 52],
 });
@@ -52,7 +52,7 @@ mainPinMarker.on('move', (evt) => {
 const createMarker = (lat, lng, popup) => {
 
   const pinIcon = L.icon({
-    iconUrl: '../leaflet/img/pin.svg',
+    iconUrl: './leaflet/img/pin.svg',
     iconSize: [40, 40],
     iconAnchor: [20, 40],
   });
